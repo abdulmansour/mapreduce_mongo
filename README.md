@@ -2,7 +2,7 @@
 
 ### Run mongo in docker container
 - open new terminal
-- cd into mapreduce_mongo/Docker
+- cd into mapreduce_mongo/Docker/mongodb
 - run command: docker-compose up
 
 ### Run springboot
