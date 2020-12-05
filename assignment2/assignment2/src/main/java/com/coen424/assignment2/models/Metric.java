@@ -42,4 +42,13 @@ public class Metric {
     public void setMem(double mem) {
         this.mem = mem;
     }
+
+    @Override
+    public String toString() {
+        return "Metric{" +
+                "metricId='" + metricId + '\'' +
+                ", cpu=" + cpu +
+                ", mem=" + mem +
+                '}';
+    }
 }
