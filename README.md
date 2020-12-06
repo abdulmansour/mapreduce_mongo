@@ -7,7 +7,7 @@
 
 ### Run springboot
 - run spring boot in ide
-- on first launch will populate mongodb
+- on first launch will populate mongodb (takes a while just wait)
 
 ### Populate mongo with data
 - open new terminal
