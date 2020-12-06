@@ -5,5 +5,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface MetricRepository extends MongoRepository<Metric, Long> {
+public interface MetricRepository extends MongoRepository<Metric, Long>, CustomMetricRepository {
 }

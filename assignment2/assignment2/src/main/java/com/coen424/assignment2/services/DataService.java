@@ -36,20 +36,20 @@ public class DataService {
                     File resource = new ClassPathResource("benchmarks/" + file + ".csv").getFile();
                     BufferedReader br = new BufferedReader(new FileReader(resource));
                     br.readLine(); // skip first line
-                    
+
                     while ((line = br.readLine()) != null) {
                         String[] data = line.split(spliter);
-                        Metric m = new Metric(String.valueOf(i),Integer.parseInt(data[0]), Double.parseDouble(data[3]));
+                        Metric m = new Metric(String.valueOf(i), Integer.parseInt(data[0]), Double.parseDouble(data[3]));
                         metricList.add(m);
-                        System.out.println(m.toString());
+                        //System.out.println(m.toString());
                         i++;
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            System.out.println("saving metrics: Can take up to 2 mins...");
             try {
+                System.out.println("Saving metrics: Can take up to 2 mins...");
                 metricRepository.saveAll(metricList);
                 System.out.println("metrics saved");
                 metrics = metricRepository.findAll();
