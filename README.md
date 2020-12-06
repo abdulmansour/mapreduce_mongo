@@ -2,7 +2,7 @@
 
 ### Run mongo in docker container
 - open new terminal
-- cd into mapreduce_mongo/Docker/mongodb
+- cd into mapreduce_mongo/Docker
 - run command: docker-compose up
 
 ### Run springboot
@@ -18,3 +18,7 @@
 - run command: db.metric.stats().count
 - confirm that size should be: 28422
 - to delete all collection metrics run command: db.metric.remove({})
+
+### Run MapReduce using Postman
+- open postman
+- execute GET request: localhost:8102/mapreduce/
