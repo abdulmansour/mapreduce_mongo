@@ -15,9 +15,10 @@
 - run command: docker exec -it mongo bash
 - run command: mongo admin -u root -p 'root'
 - run command: use test
-- run command: db.metric.stats().count
-- confirm that size should be: 28422
-- to delete all collection metrics run command: db.metric.remove({})
+- run command: db.metric.stats().count (size should be: 28422)
+- run command: db.metric.find() (view entries)
+
+*to delete all collection metrics run command: db.metric.remove({})
 
 ### Run MapReduce using Postman
 - open postman
